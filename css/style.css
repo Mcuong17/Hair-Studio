@@ -1,5 +1,5 @@
 .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url("/image/baner.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url("./image/baner.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -248,7 +248,7 @@
 .feature__image {
     width: 100%;
     height: calc(100% + 10px);
-    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url("/image/feature.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url("./image/feature.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 10px;
