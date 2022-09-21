@@ -9,203 +9,299 @@
     <link rel="stylesheet" href="./css/base.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="app">
-        <!-- Begin Hader -->
-        <div class="header">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2">
-                        <div class="header__logo">
-                            <img src="https://berger.themerex.net/wp-content/uploads/2016/07/logo.png" alt="logo" class="header__logo-img">
+    <div class="gri">
+        <div id="header">
+            <a class="header__logo" href="#header" >
+                <img src="https://berger.themerex.net/wp-content/uploads/2016/07/logo.png" alt="">
+            </a>
+            <div class="header__text">
+                <h1>Hair Studio</h1>
+                <p>Style Your Is Style Your Life</p>
+                <div class="header__btn">
+                    <a class="header__link" href=""> <span></span> Find Out</a>
+                    <a class="header__link" href=""> <span></span> Read More</a>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <input type="checkbox" name="" id="nav__checked" class="nav__input-check">
+            <label class="nav__overlay" for="nav__checked"></label>
+            <label class="nav__btn" for="nav__checked">
+                <input type="checkbox" name="" id="nav__checked">
+                <ion-icon name="menu" class="nav__btn" ></ion-icon>
+            </label>
+            <div class="side__nav">
+                <ul class="nav__list">
+                    <label class="nav__close" for="nav__checked">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </label>
+                    <li class="nav__item">
+                        <a href="#header" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#feature" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">Testimonail</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#footer" class="nav__link">More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="container">
+            <!-- Features -->
+                <div id="feature">
+                    <div class="title-text">
+                        <p>FEATURES</p>
+                        <h1> Why Choose Us </h1>
+                    </div>
+
+                    <div class="feature__box">
+                        <div class="feature__content">
+                            <h1>Experienced Staff</h1>
+                            <div class="feature__desc">
+                                <div class="feature__desc-icon">
+                                    <ion-icon name="shield-half-outline"></ion-icon>
+                                </div>
+                                <div class="feature__desc-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, repellendus quos perferendis recusandae veritatis quidem 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h1>Pre Booking Online</h1>
+                            <div class="feature__desc">
+                                <div class="feature__desc-icon">
+                                    <ion-icon name="checkbox-outline"></ion-icon>
+                                </div>
+                                <div class="feature__desc-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, repellendus quos perferendis recusandae veritatis quidem 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h1>Affordable Cost</h1>
+                            <div class="feature__desc">
+                                <div class="feature__desc-icon">
+                                    <ion-icon name="help-buoy-outline"></ion-icon>
+                                </div>
+                                <div class="feature__desc-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, repellendus quos perferendis recusandae veritatis quidem 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__img">
+                            
+                        </div>
+                    </div>
+                </div>
+            <!-- Services -->
+            <div id="services">
+                <div class="title-text">
+                    <p>Services</p>
+                    <h1> We Provider Better </h1>
+                </div>
+
+                <div class="services__box">
+                    <div class="services__content">
+                        <img src="./image/sv1.jpg" alt="" class="services__img">
+                        <div class="services__desc">
+                            <h3>Beard Trim</h3>
+                            <hr>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, repellendus
+                            </p>
+                        </div>
+                        <div class="services__overlay"></div>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="./image/sv2.jpg" alt="" class="services__img">
+                        <div class="services__desc">
+                            <h3>Beard Trim</h3>
+                            <hr>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, repellendus
+                            </p>
+                        </div>
+                        <div class="services__overlay"></div>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="./image/sv3.jpg" alt="" class="services__img">
+                        <div class="services__desc">
+                            <h3>Beard Trim</h3>
+                            <hr>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, repellendus
+                            </p>
+                        </div>
+                        <div class="services__overlay"></div>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="./image/sv4.jpg" alt="" class="services__img">
+                        <div class="services__desc">
+                            <h3>Beard Trim</h3>
+                            <hr>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, repellendus 
+                            </p>
+                        </div>
+                        <div class="services__overlay"></div>
+                    </div>
+                    </div>   
+            </div>
+
+            <!-- Testimonial -->
+            <div id="testimonial">
+                <div class="title-text">
+                    <p>TESTIMONIAL</p>
+                    <h1> What Client Say </h1>
+                </div>
+
+                <div class="client__content">
+                    <div class="client__content-box">
+                        <div class="client__content-head">
+                            <img src="./image/avt1.webp" alt="" class="client__content-avatar">
+                            <div class="client__content-user">
+                                <div class="client__user-name">Ken Norman</div>
+                                <div class="client__user-accout">
+                                    @kennorman
+                                </div>
+                            </div>
+                            <div class="client__content-social">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="client__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quae ipsum commodi nihil vel ut. Doloremque aliquid in
                         </div>
                     </div>
 
-                    <div class="gird__column-8">
-                        <div class="header__text">
-                           <h2 class="header__text-title">
-                                Hair Studio
-                           </h2>
-                           <p class="header__text-desc">
-                                Style Your Hair Is Style Your Life
-                           </p>
+                    <div class="client__content-box">
+                        <div class="client__content-head">
+                            <img src="./image/avt2.webp" alt="" class="client__content-avatar">
+                            <div class="client__content-user">
+                                <div class="client__user-name">Karian Nick</div>
+                                <div class="client__user-accout">
+                                    @kariannick
+                                </div>
+                            </div>
+                            <div class="client__content-social">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
                         </div>
-                        <div class="header__btn">
-                            <a href="">
-                               <span></span>
-                                Find Out
-                            </a>
-                            <a href="">
-                                <span></span>
-                                Read More
-                            </a>
+                        <div class="client__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quae ipsum commodi nihil vel ut. Doloremque aliquid in
                         </div>
                     </div>
-                    <div class="grid__column-2">
-                        <!-- Nav bar -->
-                        <div class="navigation">
-                            <input type="checkbox" id="nav__checked" class="nav__click-checked">
-                            <label class="nav__overlay" for="nav__checked"></label>
-                            <label class="nav" for="nav__checked">
-                                <ul class="nav__list">
-                                    <div class="nav__list-close">
-                                        <ion-icon name="close-circle-outline" class="nav__list-close-icon"></ion-icon>
-                                    </div>
-                                    <li class="nav__items">
-                                        <a href="" class="nav__link">Home</a>
-                                    </li>
-                                    <li class="nav__items">
-                                        <a href="" class="nav__link">Features</a>
-                                    </li>
-                                    <li class="nav__items">
-                                        <a href="" class="nav__link">Services</a>
-                                    </li>
-                                    <li class="nav__items">
-                                        <a href="" class="nav__link">Testimonial</a>
-                                    </li>
-                                    <li class="nav__items">
-                                        <a href="" class="nav__link">Meet Us</a>
-                                    </li>
-                                </ul>
-                            </label>
-                            <label class="nav-btn" for="nav__checked">
-                                <ion-icon name="menu-outline" class="nav__btn-icon"></ion-icon>
-                            </label>
+
+                    <div class="client__content-box">
+                        <div class="client__content-head">
+                            <img src="./image/avt3.webp" alt="" class="client__content-avatar">
+                            <div class="client__content-user">
+                                <div class="client__user-name">Diara James</div>
+                                <div class="client__user-accout">
+                                    @diariajames
+                                </div>
+                            </div>
+                            <div class="client__content-social">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </div>
                         </div>
-                        <!-- End navigation -->
+                        <div class="client__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quae ipsum commodi nihil vel ut. Doloremque aliquid in
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Header -->
+        <!-- footer -->
+        <div id="footer">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/cef37e61578913.5a72e7b263f04.jpg" class="footer__img"></img>
+            <div class="title-text">
+                <p>CONTACT</p>
+                <h1> Visit Shop Today </h1>
+            </div>
 
-        <!-- Content general use -->
-        <div class="content">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__full-width">
-                        <div class="content__text">
-                            <p class="content__text-title">
-                                Features
-                            </p>
-                            <h2 class="feature__text-desc" >
-                                Why Choose Us
-                            </h2>
-                        </div>
-                    </div>
-                    <!-- Begin Feature -->
-                    <div class="grid__column-6">
-                        <div class="feature__box">
-                            <h2 class="feature__box-title">
-                                Experienced Staff
-                            </h2>
-                            <div class="feature__box-content">
-                                <ion-icon name="shield-half-outline" class="feature__box-content-logo"></ion-icon> 
-                                <span class="feature__box-content-desc">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque tempora voluptatibus incidunt ullam illo hic.
-                                    voluptatibus incidunt ullam illo hic.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="feature__box">
-                            <h2 class="feature__box-title">
-                                Pre Booking Online
-                            </h2>
-                            <div class="feature__box-content">
-                                <ion-icon name="checkbox-outline" class="feature__box-content-logo"></ion-icon> 
-                                <span class="feature__box-content-desc">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque tempora voluptatibus incidunt ullam illo hic.
-                                    voluptatibus incidunt ullam illo hic.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="feature__box">
-                            <h2 class="feature__box-title">
-                                Affordable Cost
-                            </h2>
-                            <div class="feature__box-content">
-                                <ion-icon name="cut-outline" class="feature__box-content-logo"></ion-icon> 
-                                <span class="feature__box-content-desc">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque tempora voluptatibus incidunt ullam illo hic.
-                                    voluptatibus incidunt ullam illo hic.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="footer__content">
+                <div class="footer__info-left">
+                    <h2>Openning Hours</h2>
+                    <div class="footer__info-desc">
+                        <p>
+                            <ion-icon name="time-outline" class="footer__info-icon"></ion-icon>Monday to Friday - 9am to 9pm
+                           
+                        </p>
 
-                    <div class="grid__column-6">
-                        <div class="feature__image">
-                        </div>
+                        <p>
+                            <ion-icon name="time-outline" class="footer__info-icon" ></ion-icon>
+                            Saturday to Sunday - 8am to 11pm
+                        </p>
                     </div>
-                    <!-- End Feature -->
+                </div>
+
+                <div class="footer__info-right">
+                    <h2>Get In Touch</h2>
+                    <div class="footer__info-desc">
+                        <p>
+                           #30 abc lorny,xyz City IN
+                           <ion-icon name="location-outline" class="footer__info-icon"></ion-icon>
+                        </p>
+                        <p>
+                            example@website.com 
+                            <ion-icon name="at-outline" class="footer__info-icon"></ion-icon>
+                        </p>
+                        <p>
+                            +01 123456789
+                            <ion-icon name="phone-portrait-outline" class="footer__info-icon"></ion-icon>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-                <!-- Begin Sevices -->
-        <div class="content backround-grey ">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__full-width">
-                        <div class="content__text">
-                            <p class="content__text-title">
-                                Services
-                            </p>
-                            <h2 class="feature__text-desc" >
-                                We Provider Better
-                            </h2>
-                        </div>
-                    </div>
 
-                    <div class="grid__column-6">
-                        <div class="feature__box">
-                            <h2 class="feature__box-title">
-                                Experienced Staff
-                            </h2>
-                            <div class="feature__box-content">
-                                <ion-icon name="shield-half-outline" class="feature__box-content-logo"></ion-icon> 
-                                <span class="feature__box-content-desc">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque tempora voluptatibus incidunt ullam illo hic.
-                                    voluptatibus incidunt ullam illo hic.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="feature__box">
-                            <h2 class="feature__box-title">
-                                Pre Booking Online
-                            </h2>
-                            <div class="feature__box-content">
-                                <ion-icon name="checkbox-outline" class="feature__box-content-logo"></ion-icon> 
-                                <span class="feature__box-content-desc">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque tempora voluptatibus incidunt ullam illo hic.
-                                    voluptatibus incidunt ullam illo hic.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="feature__box">
-                            <h2 class="feature__box-title">
-                                Affordable Cost
-                            </h2>
-                            <div class="feature__box-content">
-                                <ion-icon name="cut-outline" class="feature__box-content-logo"></ion-icon> 
-                                <span class="feature__box-content-desc">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque tempora voluptatibus incidunt ullam illo hic.
-                                    voluptatibus incidunt ullam illo hic.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid__column-6">
-                        <div class="feature__image">
-                        </div>
-                    </div>
-                </div>
+            <div class="footer__social">
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
+            <div class="footer__desc">
+                <p>
+                    Copyright Turtoral Youtube Channel
+                </p>
             </div>
         </div>
     </div>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+    });
+    </script>
 </body>
 </html>
