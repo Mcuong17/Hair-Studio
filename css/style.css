@@ -1,6 +1,6 @@
 /* Header */
 #header {
-   background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url('https://znews-photo.zingcdn.me/w660/Uploaded/wyhktpu/2018_05_25/image011.jpg');
+   background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url('https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80');
    background-size: cover;
    background-position: center;
    height: 100vh;
@@ -252,7 +252,7 @@
 .feature__img {
     flex-basis: 48%;
     margin: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url('/image/feature.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url('https://images.unsplash.com/photo-1603899968034-1a56ca48d172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
    background-size: cover;
    background-position: center;
    width: 70%;

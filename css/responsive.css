@@ -1,0 +1,64 @@
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .header__logo  img{
+        width: 65%;
+        height: 65%;
+    }
+
+    .header__text h1 {
+        font-size: -webkit-xxx-large;
+    }
+
+    .title-text h1 {
+        font-size: x-large;
+    }
+
+    .feature__content {
+        flex-basis: auto; 
+    }
+
+    .feature__img {
+        flex-basis: 100%;
+    }
+
+    .services__content {
+        flex-basis: auto;
+    }
+
+    .client__content-box {
+        flex-basis: auto;
+    }
+
+    .footer__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__info-left,
+    .footer__info-right {
+        text-align: center;
+    }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .header__text h1 {
+        font-size: 75px;
+        font-weight: 200;
+    }
+
+    .feature__content {
+        flex-basis: auto; 
+    }
+
+    .feature__img {
+        flex-basis: 100%;
+    }
+
+    .footer__content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
