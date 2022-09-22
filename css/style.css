@@ -1,6 +1,6 @@
 /* Header */
 #header {
-   background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url('/image/baner.jpg');
+   background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color)), url('https://znews-photo.zingcdn.me/w660/Uploaded/wyhktpu/2018_05_25/image011.jpg');
    background-size: cover;
    background-position: center;
    height: 100vh;
